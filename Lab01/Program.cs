@@ -32,3 +32,28 @@ int c = a / b;
 double f = (double)a/b;
 Console.WriteLine($"int{c}");
 Console.WriteLine($"double{f}");
+
+Console.WriteLine();
+Console.WriteLine("Сторки");
+
+string fN = "Анна";
+string lN = "Смирнова";
+
+string fNC = fN + " " + lN;
+string fNI = $"{fN} {lN}";
+string fNCM = string.Concat(fN, " ", lN);
+
+Console.WriteLine(fNC);
+Console.WriteLine(fNI);
+Console.WriteLine(fNCM);
+
+Console.WriteLine("Константы");
+
+const double VatRate = 0.20;
+const string CollegeName = "ВФ ВолГУ";
+
+double Pric = 1000;
+double WithVat = Pric * (1 + VatRate);
+
+Console.WriteLine($"Учебное заведение: {CollegeName}");
+Console.WriteLine($"Цена без НДС: {Pric}, с НДС ({VatRate:P0}): {WithVat}");

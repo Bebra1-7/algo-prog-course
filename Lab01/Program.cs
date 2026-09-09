@@ -57,3 +57,13 @@ double WithVat = Pric * (1 + VatRate);
 
 Console.WriteLine($"Учебное заведение: {CollegeName}");
 Console.WriteLine($"Цена без НДС: {Pric}, с НДС ({VatRate:P0}): {WithVat}");
+
+Console.WriteLine();
+
+int scolarship = 10000;
+int month = 7999;
+int money = scolarship - month;
+const semester = 4;
+int total = money * semester;
+Console.WriteLine(total);
+ 

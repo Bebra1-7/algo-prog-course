@@ -1,4 +1,4 @@
-﻿// If_Else
+// If_Else
 // int score = 1200;
 // if (score >= 500)
 // {
@@ -50,3 +50,46 @@
 //     result = "Common result";
 // }
 // Console.WriteLine(result);
+
+// Вариант 9
+Console.Write("Введите ( КН или НБ и т. д. (т. е. К-Камень, Н-Ножницы, Б-Бумага)) ");
+string Peoples = Console.ReadLine();
+Console.WriteLine(Peoples);
+
+string Winner;
+switch (Peoples)
+{
+    case "КН":
+        Winner = "Победил первый игрок";
+        break;
+    case "НБ":
+        Winner = "Победил первый игрок";
+        break;
+    case "БК":
+        Winner = "Победил первый игрок";
+        break;
+
+    case "НК":
+        Winner = "Победил второй игрок";
+        break;
+    case "БН":
+        Winner = "Победил второй игрок";
+        break;
+    case "КБ":
+        Winner = "Победил второй игрок";
+        break;
+
+    case "НН":
+        Winner = "Ничья";
+        break;
+    case "КК":
+        Winner = "Ничья";
+        break;
+    case "ББ":
+        Winner = "Ничья";
+        break;
+    default:
+        Winner = "Error input";
+        break;
+}
+Console.WriteLine(Winner);

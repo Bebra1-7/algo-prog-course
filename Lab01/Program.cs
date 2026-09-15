@@ -46,6 +46,7 @@ string fNCM = string.Concat(fN, " ", lN);
 Console.WriteLine(fNC);
 Console.WriteLine(fNI);
 Console.WriteLine(fNCM);
+Console.WriteLine();
 
 Console.WriteLine("Константы");
 
@@ -57,3 +58,20 @@ double WithVat = Pric * (1 + VatRate);
 
 Console.WriteLine($"Учебное заведение: {CollegeName}");
 Console.WriteLine($"Цена без НДС: {Pric}, с НДС ({VatRate:P0}): {WithVat}");
+
+Console.WriteLine();
+
+int scolarship = 10000;
+int month = 7999;
+int money = scolarship - month;
+const int semester = 4;
+int total1 = money * semester;
+Console.WriteLine(total1);
+
+Console.WriteLine();
+
+int totalMinutes = 500;
+int minutesPerLesson = 45;
+int Lessons = totalMinutes / minutesPerLesson;
+int endLesson = totalMinutes % minutesPerLesson;
+Console.WriteLine($"{totalMinutes} минут = {Lessons} полных занятий + {endLesson} минут.");
